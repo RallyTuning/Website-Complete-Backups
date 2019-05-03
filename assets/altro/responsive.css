@@ -1,0 +1,234 @@
+@media (min-width: 601px){
+	.col.m1{
+		width:8.33333%
+	}
+	
+	.col.m2{
+		width:16.66666%
+	}
+	
+	.col.m3,.quarter{
+		width:24.99999%
+	}
+	
+	.col.m4,.third{
+		width:33.33333%
+	}
+
+	.col.m5{
+		width:41.66666%
+	}
+	
+	.col.m6,.half{
+		width:49.99999%
+	}
+	
+	.col.m7{
+		width:58.33333%
+	}
+	
+	.col.m8,.twothird{
+		width:66.66666%
+	}
+
+	.col.m9,.threequarter{
+		width:74.99999%
+	}
+	
+	.col.m10{
+		width:83.33333%
+	}
+	
+	.col.m11{
+		width:91.66666%
+	}
+	
+	.col.m12{
+		width:99.99999%
+	}
+}
+
+@media (min-width: 993px){
+	.col.l1{
+		width:8.33333%
+	}
+	
+	.col.l2{
+		width:16.66666%
+	}
+	.col.l3{
+		width:24.99999%
+	}
+	
+	.col.l4{
+		width:33.33333%
+	}
+
+	.col.l5{
+		width:41.66666%
+	}
+	
+	.col.l6{
+		width:49.99999%
+	}
+	
+	.col.l7{
+		width:58.33333%
+	}
+	
+	.col.l8{
+		width:66.66666%
+	}
+
+	.col.l9{
+		width:74.99999%
+	}
+	
+	.col.l10{
+		width:83.33333%
+	}
+	
+	.col.l11{
+		width:91.66666%
+	}
+	
+	.col.l12{
+		width:99.99999%
+	}
+}
+
+@media (max-width: 400px){
+	.il_centrale{
+		padding-top: 0!important;
+	}
+	
+	.container_menu{
+		margin-top: 0!important;
+	}
+	
+	.check_cont {
+		margin: 0!important;
+	}
+	
+	.form_bak{
+		display: grid!important;
+	}
+	
+	.button_t {
+		margin: 0!important;
+	}
+}
+
+@media (max-width: 600px){
+	.container_menu{
+		margin-top: 0!important;
+	}
+	
+	.il_centrale{
+		padding-top: 0!important;
+	}
+	
+	.bar.top{
+		position: sticky;
+	}
+	
+	.button_s{
+		width: 80%;
+	}
+	
+	.bar-item.right{
+		font-size: 16px;
+	    margin-top: 1px;
+	}
+	.modal-content{
+		margin:0 10px;
+		width:auto!important
+	}
+	.modal{
+		padding-top:30px
+	}
+	
+	.dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{
+		position:relative
+	}
+		
+	.hide-small{
+		display:none!important
+	}
+	
+	.mobile{
+		display:block;
+		width:100%!important
+	}
+	
+	.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{
+		text-align:center
+	}
+	
+	.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{
+		width:100%
+	}
+	
+	.check_cont {
+		margin: 0!important;
+	}
+}
+
+@media (max-width: 768px){
+	.modal-content{
+		width:500px
+	}
+	
+	.modal{
+		padding-top:50px
+	}
+}
+	
+@media (min-width: 993px){
+	.modal-content{
+		width:900px
+	}
+	
+	.hide-large{
+		display:none!important
+	}
+	
+	.sidebar.collapse{
+		display:block!important
+	}
+}
+	
+@media (max-width: 992px) and (min-width: 601px){
+	.hide-medium{
+		display:none!important
+	}
+	
+	.check_cont {
+		margin: 0!important;
+	}
+}
+
+@media (max-width: 992px){
+	.sidebar.collapse{
+		display:none
+	}
+
+	.main{
+		margin-left:0!important;
+		margin-right:0!important
+	}
+}
+
+@media (max-width: 40em) {
+	.login-form {
+		width: 95%;
+		position: relative;
+		margin: 2.5% auto 0 auto;
+		left: 0%;
+		-webkit-transform: translate(0%, 0%);
+		-moz-transform: translate(0%, 0%);
+		-o-transform: translate(0%, 0%);
+		-ms-transform: translate(0%, 0%);
+		transform: translate(0%, 0%);
+	}
+}

@@ -1,0 +1,16 @@
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+	order allow,deny
+	deny from all
+	satisfy all
+</Files>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost [NC] 
+	RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost.*$ [NC] 
+	RewriteRule \.(zip|sql|log)$ - [F]
+</IfModule>
+
+#ErrorDocument 404 "<h1 style=\"text-align:center;color:red;position:absolute;width:auto;height:50px;top:50%;left:45%;margin-left:-50px;margin-top:-25px;\">Accesso negato</h1>"
