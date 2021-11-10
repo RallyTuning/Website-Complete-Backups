@@ -18,14 +18,14 @@ if (!$_SESSION['gtc-backup_session']): ?>
 
 <html>
 	<head>
-		<?php include_once(PATH_INCLUSI . 'testata.php'); ?>
+		<?php include_once(PATH_INCLUDED . 'header.php'); ?>
 		
 	</head>
 	<body class="login-body">
 		<div class="login-page">
 			<form class="login-form" method="post">
                 
-                <div class="login-logo"><img src="<?php echo RES_ASSETS; ?>immagini/safe-icon.png" alt="Logo"><span class="login-logotxt"><?php echo APP; ?></span></div>
+                <div class="login-logo"><img src="<?php echo RES_ASSETS; ?>images/safe-icon.png" alt="Logo"><span class="login-logotxt">WCB</span></div>
                 <?php
 					if (isset($_POST['password'])){
 						if (sha1($_POST['password']) == sha1(PASSWORD)):
@@ -49,7 +49,7 @@ else:
     if (isset($_GET['logout'])){
 		$_SESSION['gtc-backup_session'] = false;
 		Scrivi_log('Info', 'Disconnessione eseguita. IP: '.$_SERVER['REMOTE_ADDR']);
-		die(header("Location: " . PATH_ASSETS . "accesso.php"));
+		die(header("Location: " . PATH_ASSETS . "login.php"));
 	}
 endif;
 ?>

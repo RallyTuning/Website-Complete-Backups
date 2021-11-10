@@ -3,7 +3,7 @@ require_once('config.php');
 ?>
 <html>
 	<head>
-		<?php include_once(PATH_INCLUSI . 'testata.php'); ?>
+		<?php include_once(PATH_INCLUDED . 'header.php'); ?>
 		
 	</head>
 	<body>

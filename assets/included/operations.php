@@ -1,7 +1,7 @@
 <?php echo Testata('<i class="fa fa-magic text-purple"></i> Operazioni'); ?>
 			
 			<div class="container">
-				<p>Lista di operazioni che &egrave; possibile effettuare con l'App <?php echo APP;?>.</p>
+				<p>Lista di operazioni che &egrave; possibile effettuare con l'App.</p>
 				<p>Per maggiori informazioni, leggi la <a href="?wiki"><i class="fa fa-book fa-fw text-brown"></i>documentazione</a> in merito.</p>
 				<form name="" method="post" action="" class="form_norm">
     				<input class="button_s btn_giallo" type="submit" name="host" value="Effettua backup Host" />

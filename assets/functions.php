@@ -6,6 +6,15 @@
  */
 
 
+require_once('config.php');
+
+include_once(selected_lang);
+
+function __construct(){
+
+}
+
+
 /** Impostazioni files ini */
 ini_set('max_execution_time', 0);
 ini_set('memory_limit', '-1');
@@ -18,7 +27,7 @@ set_time_limit(0);
 
 
 /** Protezione file */
-Proteggi_Pagina(basename($_SERVER['PHP_SELF']),'funzioni.php');
+Proteggi_Pagina(basename($_SERVER['PHP_SELF']),'functions.php');
 
 /** Creazione struttura cartelle */
 VersionePHP('5.6.0');
@@ -62,7 +71,7 @@ Function Check_Sito($config_str){
     $_cfgstr = rtrim($config_str, '/');
     if (trim(strtolower($_sito)) != trim(strtolower($_cfgstr))){
         die('<html><head><meta charset="UTF-8" /><title>Backup App</title></head><br /><center><font color=blue><h1>! Attenzione !</h1>
-            <h3>File di configurazione non compatibile, perfavore effettua di nuovo l\'<a href="'.RES_ASSETS.'installa.php">installazione</a>.</h3></font></center></html>');
+            <h3>File di configurazione non compatibile, perfavore effettua di nuovo l\'<a href="'.RES_ASSETS.'install.php">installazione</a>.</h3></font></center></html>');
     }
 }
 
@@ -74,6 +83,15 @@ Function Crea_Struttura($path){
     if (!file_exists($path)) {
 		mkdir($path, 0755, true);
 	}
+}
+
+
+/**
+ * Get the language string
+ */
+Function lng($key){
+    global $i18n_strings;
+	return $i18n_strings[$key];
 }
 
 

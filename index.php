@@ -6,13 +6,14 @@
  */
 
 
-/** Installazione */
+ /** Installazione */
 if (!file_exists("./assets/config.php")){
-    die(header("Location: ./assets/installa.php"));
+    die(header("Location: ./assets/install.php"));
 }
 
 /** File Config */
-require_once('./assets/config.php');
+require_once('./assets/functions.php');
+
 
 /** API & Accesso */
 if (isset($_GET["api"])){
@@ -65,7 +66,7 @@ if (isset($_GET["api"])){
         }
 
     //}elseif (isset($_GET["report"])){
-        //include(PATH_INCLUSI . 'operazioni.php');
+        //include(PATH_INCLUDED . 'operations.php');
     }
 
     /** Risposta positiva */
@@ -75,7 +76,7 @@ if (isset($_GET["api"])){
 } else {
     
     /** Accesso */
-    require(PATH_ASSETS . 'accesso.php');
+    require(PATH_ASSETS . 'login.php');
     
 }?>
 <!DOCTYPE html>
@@ -86,54 +87,54 @@ if (isset($_GET["api"])){
 -->
 <html>
 	<head>
-		<?php include_once(PATH_INCLUSI . 'testata.php'); ?>
+		<?php include_once(PATH_INCLUDED . 'header.php'); ?>
 		
 	</head>
 	<body class="light-grey">
 
 		<!-- Menu -->
-		<?php include(PATH_INCLUSI . 'menu.php'); ?>
+		<?php include(PATH_INCLUDED . 'menu.php'); ?>
 		
 		<div class="overlay hide-large animate-opacity" onclick="menu_close()" style="cursor:pointer" title="close side menu" id="menuOverlay"></div>
 
 		<!-- Contenitore -->
 		<div class="main il_centrale" style="margin-left:300px;">
-			<?php if (file_exists(PATH_ASSETS . "installa.php")){
-			    Messaggio('Si consiglia di rimuovere o rinominare il file ".../assets/installa.php"','attenzione');
+			<?php if (file_exists(PATH_ASSETS . "install.php")){
+			    Messaggio('Si consiglia di rimuovere o rinominare il file ".../assets/install.php"','attenzione');
 			}?>
 
 			<!-- Pagina -->
 			<?php
                 if (isset($_GET["backups"])){
-    				include(PATH_INCLUSI . 'backups.php');
+    				include(PATH_INCLUDED . 'backups.php');
     					
-				}elseif (isset($_GET["operazioni"])){
-					include(PATH_INCLUSI . 'operazioni.php');
+				}elseif (isset($_GET["operations"])){
+					include(PATH_INCLUDED . 'operations.php');
 					
-				}elseif (isset($_GET["impostazioni"])){
-				    include(PATH_INCLUSI . 'impostazioni.php');
+				}elseif (isset($_GET["settings"])){
+				    include(PATH_INCLUDED . 'settings.php');
 				
 				}elseif (isset($_GET["wiki"])){
-					include(PATH_INCLUSI . 'wiki.php');
+					include(PATH_INCLUDED . 'wiki.php');
 					
-				}elseif (isset($_GET["aiuto"])){
-				    include(PATH_INCLUSI . 'aiuto.php');
+				}elseif (isset($_GET["about"])){
+				    include(PATH_INCLUDED . 'about.php');
 					
 				}elseif (isset($_GET["logs"])){
-				    include(PATH_INCLUSI . 'logs.php');
+				    include(PATH_INCLUDED . 'logs.php');
 					
 				}elseif (isset($_GET["logout"])){
                     $_SESSION['gtc-backup_session'] = false;
 				    die(header("Location: " . PATH_APP));
 					
 				}else{
-					include(PATH_INCLUSI . 'dashboard.php');
+					include(PATH_INCLUDED . 'dashboard.php');
 				}
 			?>
 
 		</div>
 
 		<!-- Scripts -->
-		<script type="text/javascript" src="<?php echo RES_ASSETS;?>altro/scripts.js"></script>
+		<script type="text/javascript" src="<?php echo RES_ASSETS;?>styles/scripts.js"></script>
 	</body>
 </html>

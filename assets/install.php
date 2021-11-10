@@ -30,13 +30,13 @@ $pos = "
 define('PATH_BASE', ".'$_SERVER'."['DOCUMENT_ROOT']);
 define('PATH_APP', PATH_BASE . '/'.ROOT.'/');
 define('PATH_ASSETS', PATH_APP . 'assets/');
-define('PATH_INCLUSI', PATH_ASSETS . 'inclusi/');
+define('PATH_INCLUDED', PATH_ASSETS . 'included/');
 define('BACKUP_IN', ".'$_SERVER'."['DOCUMENT_ROOT'].'/'.BACKUP_DI);
 define('BACKUP_OUT', PATH_APP .SALVA_IN);
 define('PATH_LOGS', PATH_APP .'logs/');
 define('RES_ASSETS', ".'$_SERVER'."['REQUEST_SCHEME'].'://'.".'$_SERVER'."['HTTP_HOST']. '/'.ROOT.'/assets/');
 
-require_once(PATH_ASSETS . 'funzioni.php'); // A prescindere
+require_once(PATH_ASSETS . 'functions.php'); // A prescindere
 Proteggi_Pagina(basename(".'$_SERVER'."['PHP_SELF']),'config.php');
 ?>"; // Occhio qua alla scritta $_SERVER
 
@@ -100,7 +100,7 @@ if (count($_POST) > 0) {
     	<title>Installazione</title>
     	<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/png" href="immagini/favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
         <style>
             * {
                 box-sizing: border-box;

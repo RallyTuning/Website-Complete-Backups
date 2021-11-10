@@ -22,9 +22,9 @@ if(extension_loaded('zlib') == true){
 <?php echo Testata('<i class="fa fa-life-ring text-orange"></i> Aiuto'); ?>
 			
 			<div class="container" style="text-align: center;">
-				<img src="<?php echo RES_ASSETS; ?>immagini/safe-icon.png" alt="Logo">
-    			<h2><?php echo APP;?></h2>
-    			<h3><i>WCB Website Complete Backups</i></h3>
+				<img src="<?php echo RES_ASSETS; ?>images/safe-icon.png" alt="Logo">
+    			<h2>WCB</h2>
+    			<h3><i>Website Complete Backups</i></h3>
 				<p>Versione 0.33 <a href="<?php echo RES_ASSETS; ?>update.php"><i class="fa fa-refresh"></i></a></p>
 				<br />
 				<a href="https://github.com/RallyTuning"><i class="fa fa-external-link text-blue icona_btn" aria-hidden="true"></i>RallyTuning</a>
