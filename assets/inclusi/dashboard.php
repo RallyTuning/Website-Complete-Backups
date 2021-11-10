@@ -1,9 +1,8 @@
 <?php
 /**
- * GTC Backup
- * Creato da Network GTC
- * www.networkgtc.it
- * Gianluigi Capozzoli
+ * WCB Website Complete Backups
+ * Created by https://github.com/RallyTuning
+ * GNU General Public License v3.0
  */
 
 

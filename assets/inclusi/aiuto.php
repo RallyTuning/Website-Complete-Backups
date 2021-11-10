@@ -24,14 +24,14 @@ if(extension_loaded('zlib') == true){
 			<div class="container" style="text-align: center;">
 				<img src="<?php echo RES_ASSETS; ?>immagini/safe-icon.png" alt="Logo">
     			<h2><?php echo APP;?></h2>
-    			<h3><i>Network GTC</i></h3>
+    			<h3><i>WCB Website Complete Backups</i></h3>
 				<p>Versione 0.33 <a href="<?php echo RES_ASSETS; ?>update.php"><i class="fa fa-refresh"></i></a></p>
 				<br />
-				<a href="http://www.networkgtc.it"><i class="fa fa-external-link text-blue icona_btn" aria-hidden="true"></i>www.networkgtc.it</a>
+				<a href="https://github.com/RallyTuning"><i class="fa fa-external-link text-blue icona_btn" aria-hidden="true"></i>RallyTuning</a>
 				<br />
 				<br />
 				<p>Sviluppato da:</p>
-				<a href="mailto:g.capozzoli@networkgtc.it"><i class="fa fa-envelope text-red icona_btn" aria-hidden="true"></i>Gianluigi Capozzoli</a>
+				<a href="https://github.com/RallyTuning"><i class="fa fa-envelope text-red icona_btn" aria-hidden="true"></i>Gianluigi Capozzoli</a>
 				<br />
 				<br />
 				<br />

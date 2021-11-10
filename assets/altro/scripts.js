@@ -1,3 +1,10 @@
+/**
+ * WCB Website Complete Backups
+ * Created by https://github.com/RallyTuning
+ * GNU General Public License v3.0
+ */
+
+
 // DIV con la sidebar
 var MenuSidebar = document.getElementById("Menu_Sidebar");
 

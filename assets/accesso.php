@@ -1,9 +1,8 @@
 <?php
 /**
- * GTC Backup
- * Creato da Network GTC
- * www.networkgtc.it
- * Gianluigi Capozzoli
+ * WCB Website Complete Backups
+ * Created by https://github.com/RallyTuning
+ * GNU General Public License v3.0
  */
 
 
@@ -39,7 +38,7 @@ if (!$_SESSION['gtc-backup_session']): ?>
 				endif;} ?>
                 <input type="password" name="password" title="password" placeholder="Password" />
                 <button>Login</button>
-				<a class="login-forgot" href="mailto:g.capozzoli@networkgtc.it">Password dimenticata?</a>
+				<a class="login-forgot" href="#">Password dimenticata?</a>
 			</form>
         </div>
 	</body>

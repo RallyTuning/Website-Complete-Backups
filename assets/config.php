@@ -1,32 +1,31 @@
 <?php
 /**
- * GTC Backup
- * Creato da Network GTC
- * www.networkgtc.it
- * Gianluigi Capozzoli
+ * WCB Website Complete Backups
+ * Created by https://github.com/RallyTuning
+ * GNU General Public License v3.0
  */
 
 
 //===========================================
 //		IMPOSTAZIONI E PARAMETRI APP
 //===========================================
-define('APP', 'GTC Backup');
+define('APP', 'Disactive Backups');
 define('SITO', 'http://localhost');
-define('ROOT', 'gtc-backup');
+define('ROOT', 'Plugin Backup');
 define('PULIZIA', '7');
-define('PASSWORD', 'test123');
-define('COMMENTO', 'Backup del '.date("d/m/Y @ H:i:s"));
-define('SPAZIO', '10737418240');
+define('PASSWORD', '12345');
+define('COMMENTO', 'Backup del giorno '.date("d-m-y").' alle ore '.date("His").'');
+define('SPAZIO', '0');
 define('LOGS', 'true');
 define('BACKUP_DI', '');
 define('SALVA_IN', 'backups');
-define('IGNORA', array('sito_restore','wordpress'));
+define('IGNORA', array(''));
 define('ZIP_HOST', 'backup_'.date("d-m-y").'_'.date("His").'.zip');
 define('ZIP_DB', 'backup_'.date("d-m-y").'_'.date("His").'.sql');
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
+define('DB_HOST', '');
+define('DB_USER', '');
 define('DB_PASS', '');
-define('DB_NAME', 'cao');
+define('DB_NAME', '');
 
 //===========================================
 //		NON MODIFICARE SOTTO QUESTA LINEA
@@ -41,6 +40,5 @@ define('PATH_LOGS', PATH_APP .'logs/');
 define('RES_ASSETS', $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST']. '/'.ROOT.'/assets/');
 
 require_once(PATH_ASSETS . 'funzioni.php'); // A prescindere
-Check_Sito(SITO);
 Proteggi_Pagina(basename($_SERVER['PHP_SELF']),'config.php');
 ?>

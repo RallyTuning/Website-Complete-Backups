@@ -1,3 +1,10 @@
+/**
+ * WCB Website Complete Backups
+ * Created by https://github.com/RallyTuning
+ * GNU General Public License v3.0
+ */
+
+
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 html{
@@ -9,7 +16,7 @@ html{
 
 html{
 	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%
+	-webkit-text-size-adjust:100%;
 	height: 100%;
 }
 body{

@@ -1,7 +1,7 @@
 <?php $cur_pag = $_SERVER['QUERY_STRING']; ?>
 <div class="bar top black large" style="z-index:4">
 			<button class="bar-item button hide-large hover-none hover-text-light-grey" onclick="menu_open();"><i class="fa fa-bars"></i> &nbsp;</button>
-			<span class="bar-item right"><?php echo APP;?> <small>Powered by <a href="http://www.networkgtc.it">Network GTC</a></small></span>
+			<span class="bar-item right"><?php echo APP;?> <small>Powered by <a href="https://github.com/RallyTuning">RallyTuning</a></small></span>
 		</div>
 		<nav class="sidebar collapse white animate-left" style="z-index:3;width:300px;" id="Menu_Sidebar"><br>
 			<div class="container_menu">

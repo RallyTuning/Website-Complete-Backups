@@ -1,9 +1,8 @@
 <?php
 /**
- * GTC Backup
- * Creato da Network GTC
- * www.networkgtc.it
- * Gianluigi Capozzoli
+ * WCB Website Complete Backups
+ * Created by https://github.com/RallyTuning
+ * GNU General Public License v3.0
  */
 
 
@@ -81,10 +80,9 @@ if (isset($_GET["api"])){
 }?>
 <!DOCTYPE html>
 <!-- 
-    GTC Backup
-    Creato da Network GTC
-    www.networkgtc.it
-    Gianluigi Capozzoli
+    WCB Website Complete Backups
+    Created by https://github.com/RallyTuning
+    GNU General Public License v3.0
 -->
 <html>
 	<head>
